@@ -1,2 +1,2 @@
-# qr-emvco-parser
+# QR-emvco-parser
 Parser form for EMVCO standard QR's

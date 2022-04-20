@@ -1,0 +1,19 @@
+{
+  "name": "qr-emvco-parser",
+  "version": "1.0.0",
+  "description": "Parser for EMVCO QR's",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcop0lo/qr-emvco-parser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcop0lo/qr-emvco-parser/issues"
+  },
+  "homepage": "https://github.com/marcop0lo/qr-emvco-parser#readme"
+}

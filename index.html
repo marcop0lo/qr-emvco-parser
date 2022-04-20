@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QR Data Parser</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/reader.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>
+                            <i class="fa fa-qrcode"></i>
+                            QR Data Parser
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                            <div class="form-group">
+                                <label for="data">Data</label>
+                                <input type="text" name="data" id="data" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="result">Result</label>
+                                <textarea type="text" name="result" id="result" class="form-control" disabled></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success" onclick="readData()">
+                                    Submit
+                                </button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDl9aK5nCwgb_sKAmLSO75KTKmkAM3d_hk",
+          authDomain: "emvco-qr-data-beautifier.firebaseapp.com",
+          projectId: "emvco-qr-data-beautifier",
+          storageBucket: "emvco-qr-data-beautifier.appspot.com",
+          messagingSenderId: "888809206339",
+          appId: "1:888809206339:web:bd71cc22b5e21534be5af6",
+          measurementId: "G-R7Q9C3BREQ"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>
